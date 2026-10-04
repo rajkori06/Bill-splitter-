@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bill Splitter — Fair &amp; Custom Split | ZC-A9E29191C395</title>
+  <meta name="description" content="High-precision fair bill splitting web application with exact share calculation, custom unequal shares, occasion records, and glassmorphic UI." />
+  <meta property="og:title" content="Bill Splitter — Fair &amp; Custom Split" />
+  <meta property="og:description" content="High-precision fair bill splitting web application with exact share calculation, custom unequal shares, occasion records, and glassmorphic UI." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Single Pure CSS Link (Zero External Libraries, Zero Google Fonts) -->
+  <link rel="stylesheet" href="./ZC-A9E29191C395_style.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       Navigation Bar (Top Bar Contract: Brand | Navigation | Actions)
+       ========================================================================= -->
+  <header class="top-navbar">
+    <div class="container nav-inner">
+      <!-- Zone 1: Single Text Element Wordmark -->
+      <a href="#hero" class="brand-wordmark">
+        <div class="brand-icon-box" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <line x1="6" y1="12" x2="18" y2="12"></line>
+            <line x1="12" y1="8" x2="12" y2="16"></line>
+          </svg>
+        </div>
+        <span class="brand-title">Bill <span>Splitter</span></span>
+      </a>
+
+      <!-- Zone 2: Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link">Bill Splitter</a>
+        <a href="#working" class="nav-link">Calculator</a>
+        <a href="#records" class="nav-link">Previous Records</a>
+        <a href="#developer" class="nav-link">Developer Profile</a>
+      </nav>
+
+      <!-- Zone 3: Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <button type="button" id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        <a href="#working" class="btn btn-primary btn-sm">Split Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         SECTION 1: Bill Splitter (Hero & Overview)
+         ======================================================================= -->
+    <section id="hero" class="hero-section reveal">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-meta-kicker">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Competition ID: ZC-A9E29191C395</span>
+            <span aria-hidden="true">·</span>
+            <span>By Raj Kori</span>
+          </div>
+
+          <h1 class="hero-title">
+            Smart Bill Splitter for Friends, <br />
+            <span class="gradient-text">Equal or Custom Shares Down to the Last Cent.</span>
+          </h1>
+
+          <p class="hero-description">
+            Whether splitting equally or adjusting for friends who ordered more or less, Bill Splitter calculates exact individual shares guaranteed to add up precisely to the total bill, even across page reloads.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#working" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              Start Splitting Bill
+            </a>
+            <a href="#records" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              View Previous Records
+            </a>
+          </div>
+
+          <!-- Feature Cards Grid (Section 1 Highlights) -->
+          <div class="hero-features-grid">
+            <div class="glass-panel feature-card reveal reveal-delay-1">
+              <div class="feature-icon-bubble">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Equal &amp; Custom Editable Splits</h3>
+              <p class="feature-text">Split bills equally with zero penny rounding loss, or freely customize individual amounts when someone ordered extra.</p>
+            </div>
+
+            <div class="glass-panel feature-card reveal reveal-delay-2">
+              <div class="feature-icon-bubble">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                  <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                  <polyline points="7 3 7 8 15 8"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">Persistent on Reload</h3>
+              <p class="feature-text">Your inputs, friend names, custom edits, and calculated shares persist automatically in browser memory when refreshing.</p>
+            </div>
+
+            <div class="glass-panel feature-card reveal reveal-delay-3">
+              <div class="feature-icon-bubble">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="m10 15 5-3-5-3v6Z"></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Pure 3-File Architecture</h3>
+              <p class="feature-text">100% self-contained in 3 standalone files without external frameworks, libraries, or external file generation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 2: Bill Splitter Working (Calculator & Exact Shares Breakdown)
+         ======================================================================= -->
+    <section id="working" class="working-section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Section 02</span>
+          <h2 class="section-heading">Bill Splitter Working Engine</h2>
+          <p class="section-subheading">Choose equal split or edit individual amounts for friends paying different shares. 100% exact math.</p>
+        </div>
+
+        <div class="splitter-grid">
+          <!-- Left Column: Splitter Input Controls -->
+          <div class="glass-panel calculator-card">
+            <div class="calculator-header">
+              <h3 class="calculator-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                  <line x1="8" y1="6" x2="16" y2="6"></line>
+                  <line x1="16" y1="14" x2="16" y2="18"></line>
+                  <path d="M16 10h.01"></path>
+                  <path d="M12 10h.01"></path>
+                  <path d="M8 10h.01"></path>
+                  <path d="M12 14h.01"></path>
+                  <path d="M8 14h.01"></path>
+                  <path d="M12 18h.01"></path>
+                  <path d="M8 18h.01"></path>
+                </svg>
+                Bill Parameters
+              </h3>
+              <button type="button" id="resetBtn" class="btn btn-secondary btn-sm" title="Clear current inputs">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                Reset
+              </button>
+            </div>
+
+            <!-- Split Mode Toggle: Equal vs Custom -->
+            <div class="split-mode-selector">
+              <button type="button" id="modeEqualBtn" class="split-mode-btn active" title="Divide bill equally with exact cent precision">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="9" x2="19" y2="9"></line>
+                  <line x1="5" y1="15" x2="19" y2="15"></line>
+                </svg>
+                Equal Split
+              </button>
+              <button type="button" id="modeCustomBtn" class="split-mode-btn" title="Edit individual amounts for friends paying more or less">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                  <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
+                Custom / Unequal Split
+              </button>
+            </div>
+
+            <form id="splitterForm" onsubmit="event.preventDefault();">
+              <!-- Occasion Name Input -->
+              <div class="form-group">
+                <label for="occasionInput" class="form-label">1. Occasion Name</label>
+                <div class="input-wrapper">
+                  <span class="input-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                  </span>
+                  <input 
+                    type="text" 
+                    id="occasionInput" 
+                    class="form-input input-with-icon" 
+                    placeholder="e.g. Hostel Reunion Dinner, Weekend Road Trip" 
+                    value="Dinner with Friends"
+                    required
+                  />
+                </div>
+                <div class="form-helper">Specifies what the bill split is for. Saved in browser memory.</div>
+              </div>
+
+              <!-- Bill Amount & Currency -->
+              <div class="input-row">
+                <div class="form-group">
+                  <label for="billAmountInput" class="form-label">2. Bill Total Amount</label>
+                  <div class="amount-combo">
+                    <select id="currencySelect" class="form-select" aria-label="Currency">
+                      <option value="₹">₹ INR</option>
+                      <option value="$">$ USD</option>
+                      <option value="€">€ EUR</option>
+                      <option value="£">£ GBP</option>
+                    </select>
+                    <div class="input-wrapper" style="flex: 1;">
+                      <input 
+                        type="number" 
+                        id="billAmountInput" 
+                        class="form-input tabular" 
+                        placeholder="0.00" 
+                        step="0.01" 
+                        min="0.01" 
+                        value="1500" 
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-helper">Total bill stated on the receipt slip.</div>
+                </div>
+
+                <!-- Number of People Counter -->
+                <div class="form-group">
+                  <label for="peopleCountInput" class="form-label">3. Number of Friends</label>
+                  <div class="counter-box">
+                    <button type="button" id="decreasePeopleBtn" class="counter-btn" aria-label="Decrease people count">-</button>
+                    <input type="number" id="peopleCountInput" class="counter-input tabular" value="4" min="2" max="50" readonly />
+                    <button type="button" id="increasePeopleBtn" class="counter-btn" aria-label="Increase people count">+</button>
+                  </div>
+                  <div class="form-helper">Minimum 2 friends. Add or remove anytime.</div>
+                </div>
+              </div>
+
+              <!-- Dynamic Participants List -->
+              <div class="participants-section">
+                <div class="participants-header">
+                  <span class="participants-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    Friend Names &amp; Individual Amounts
+                  </span>
+                  <button type="button" id="addParticipantBtn" class="btn btn-secondary btn-sm">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Add Friend
+                  </button>
+                </div>
+
+                <!-- Custom Mode Allocation Balance Tracker -->
+                <div id="balanceTrackerBox" class="balance-tracker-box" style="display: none;">
+                  <div class="balance-item">
+                    <span class="balance-label">Total Bill</span>
+                    <span id="trackerTotalBill" class="balance-val tabular">₹1,500.00</span>
+                  </div>
+                  <div class="balance-item">
+                    <span class="balance-label">Allocated</span>
+                    <span id="trackerAllocated" class="balance-val tabular">₹1,500.00</span>
+                  </div>
+                  <div class="balance-item">
+                    <span class="balance-label">Remaining</span>
+                    <span id="trackerRemaining" class="balance-val tabular">₹0.00</span>
+                  </div>
+                  <div id="trackerStatusBadge" class="balance-status-badge balanced">
+                    ✓ Exact Match
+                  </div>
+                  <div class="balance-quick-actions">
+                    <button type="button" id="autofillRemainingBtn" class="btn btn-secondary btn-sm" style="flex: 1;">
+                      Auto-fill Remaining
+                    </button>
+                    <button type="button" id="splitEvenlyBtn" class="btn btn-secondary btn-sm" style="flex: 1;">
+                      Reset to Equal
+                    </button>
+                  </div>
+                </div>
+
+                <div id="participantsContainer" class="participants-list">
+                  <!-- Dynamically populated rows with name & optional custom amount -->
+                </div>
+              </div>
+
+              <!-- Optional Tip / Extra Charge Selector -->
+              <div class="tip-options-box">
+                <span class="tip-label">Optional Tip / Tax:</span>
+                <div class="tip-chips">
+                  <button type="button" class="tip-chip active" data-tip="0">0%</button>
+                  <button type="button" class="tip-chip" data-tip="5">5%</button>
+                  <button type="button" class="tip-chip" data-tip="10">10%</button>
+                  <button type="button" class="tip-chip" data-tip="15">15%</button>
+                </div>
+              </div>
+
+              <!-- Primary Calculate Button -->
+              <div class="calculate-actions">
+                <button type="button" id="calculateBtn" class="btn btn-primary">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                  Calculate Exact Bill Split
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right Column: Results & Exact Share Breakdown -->
+          <div id="resultsCard" class="glass-panel results-card">
+            <!-- Empty Placeholder -->
+            <div id="emptyResultsState" class="empty-state" style="display: none;">
+              <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+              <h4>No Active Bill Calculation</h4>
+              <p>Fill out the bill details on the left and click "Calculate Exact Bill Split" to view the mathematical breakdown.</p>
+            </div>
+
+            <!-- Active Calculated Output -->
+            <div id="calculatedResultsState">
+              <div class="results-header">
+                <h3 class="results-title">Exact Share Breakdown</h3>
+                <span id="saveRecordBadge" class="records-count-badge">Live Split</span>
+              </div>
+
+              <!-- Mathematical Exactness Proof Banner -->
+              <div class="exact-proof-banner">
+                <svg class="proof-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <div id="exactProofText">
+                  <strong>Exact Math Verified:</strong> Sum of shares matches the Total Bill exactly.
+                </div>
+              </div>
+
+              <!-- Summary Metric Cards -->
+              <div class="summary-metrics-bar">
+                <div class="metric-pill">
+                  <div class="metric-pill-label">Total Bill</div>
+                  <div id="statTotalBill" class="metric-pill-value tabular">₹1,500.00</div>
+                </div>
+                <div class="metric-pill">
+                  <div class="metric-pill-label">Participants</div>
+                  <div id="statPeopleCount" class="metric-pill-value">4 Friends</div>
+                </div>
+                <div class="metric-pill">
+                  <div class="metric-pill-label">Avg Share</div>
+                  <div id="statAverageShare" class="metric-pill-value tabular">₹375.00</div>
+                </div>
+              </div>
+
+              <!-- Individual Participant Shares List (With Inline Edit & Paid Checkbox) -->
+              <div id="sharesContainer" class="shares-list">
+                <!-- Dynamically populated shares with avatars, inline edit button, and paid toggle -->
+              </div>
+
+              <!-- Actions Toolbar -->
+              <div class="results-toolbar">
+                <button type="button" id="saveRecordBtn" class="btn btn-primary" title="Save this split into previous records">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                    <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                    <polyline points="7 3 7 8 15 8"></polyline>
+                  </svg>
+                  Save to Records
+                </button>
+                <button type="button" id="copySummaryBtn" class="btn btn-secondary" title="Copy breakdown to clipboard">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  Copy Summary
+                </button>
+                <button type="button" id="printReceiptBtn" class="btn btn-secondary" title="View formatted receipt slip">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  Receipt Slip
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3: Previous Records (Browser Memory Storage Only - No Files)
+         ======================================================================= -->
+    <section id="records" class="records-section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Section 03</span>
+          <h2 class="section-heading">Previous Bill Split Records</h2>
+          <p class="section-subheading">Saved securely in browser memory (LocalStorage). No external files created or required. Reload any bill back into the calculator anytime.</p>
+        </div>
+
+        <div class="records-toolbar">
+          <div id="recordsCountBadge" class="records-count-badge">0 Records Stored</div>
+          <div style="display: flex; gap: 10px;">
+            <button type="button" id="clearRecordsBtn" class="btn btn-danger btn-sm" title="Clear all history from browser memory">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="3 6 5 6 21 6"></polyline>
+                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+              </svg>
+              Clear History
+            </button>
+          </div>
+        </div>
+
+        <div id="recordsList" class="records-grid">
+          <!-- Dynamically populated saved record cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4: My Detail (Raj Kori Profile Card & Architecture Compliance)
+         ======================================================================= -->
+    <section id="developer" class="developer-section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Section 04</span>
+          <h2 class="section-heading">Developer Details &amp; Competition Verification</h2>
+          <p class="section-subheading">Official contestant credentials, institution verification, and strict 3-file architecture compliance.</p>
+        </div>
+
+        <div class="developer-card-wrapper">
+          <div class="glass-panel developer-card">
+            <div class="developer-content-grid">
+              <!-- Avatar Column -->
+              <div class="developer-avatar-box">
+                <div class="developer-avatar">
+                  <span class="developer-avatar-initials">RK</span>
+                </div>
+                <div class="verified-badge">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Verified Contestant
+                </div>
+              </div>
+
+              <!-- Information Column -->
+              <div class="developer-info">
+                <div class="developer-name-title">
+                  <h3 class="developer-name">Raj Kori</h3>
+                  <span class="developer-role">Student Software Developer &amp; Contestant</span>
+                </div>
+
+                <!-- Structured Spec Grid -->
+                <div class="detail-spec-grid">
+                  <!-- Institution -->
+                  <div class="spec-item">
+                    <svg class="spec-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <div class="spec-data">
+                      <span class="spec-label">College / Institute</span>
+                      <span class="spec-value">Sagar Institute of Science and Technology (SISTec), Ratibad, Bhopal, MP</span>
+                    </div>
+                  </div>
+
+                  <!-- Competition ID -->
+                  <div class="spec-item">
+                    <svg class="spec-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="4" width="18" height="16" rx="3"></rect>
+                      <circle cx="9" cy="10" r="2"></circle>
+                      <line x1="15" y1="8" x2="17" y2="8"></line>
+                      <line x1="15" y1="12" x2="17" y2="12"></line>
+                      <line x1="7" y1="16" x2="17" y2="16"></line>
+                    </svg>
+                    <div class="spec-data">
+                      <span class="spec-label">Competition ID</span>
+                      <span class="spec-value" style="display: flex; align-items: center; gap: 8px;">
+                        <strong style="color: var(--accent-hover); font-family: var(--font-mono);">ZC-A9E29191C395</strong>
+                        <button type="button" id="copyCompetitionIdBtn" class="btn btn-secondary btn-sm" style="padding: 2px 8px; font-size: 0.74rem;" title="Copy Contest ID">
+                          Copy
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="spec-item">
+                    <svg class="spec-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <div class="spec-data">
+                      <span class="spec-label">Contact Phone</span>
+                      <span class="spec-value">
+                        <a href="tel:+916263465690">+91 6263465690</a>
+                        <span style="color: var(--text-muted); font-size: 0.82rem; font-weight: normal;">(Bhopal, MP)</span>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Architecture & Stack Compliance -->
+                  <div class="spec-item">
+                    <svg class="spec-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <div class="spec-data">
+                      <span class="spec-label">Contest Strict 3-File Rule</span>
+                      <span class="spec-value">100% Compliant · HTML + CSS + JS Only · Zero Dependencies</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Competition Strict 3-File Manifest Box -->
+                <div class="submission-kit-box">
+                  <div class="submission-kit-header">
+                    <span class="submission-kit-title">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                      </svg>
+                      Strict 3-File Architecture Manifest
+                    </span>
+                    <span style="font-size: 0.78rem; color: var(--success-color); font-weight: 700;">Verified (Only 3 Files)</span>
+                  </div>
+
+                  <p style="font-size: 0.84rem; color: var(--text-secondary); margin-bottom: 12px;">
+                    This project strictly adheres to the competition rule of containing only 3 standalone files without any extra files or external libraries:
+                  </p>
+
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <div class="glass-card-sm" style="padding: 10px 14px; font-family: var(--font-mono); font-size: 0.84rem; display: flex; align-items: center; justify-content: space-between;">
+                      <span>📄 <strong>ZC-A9E29191C395_index.html</strong></span>
+                      <span style="color: var(--text-muted); font-size: 0.76rem;">All 4 Sections Markup</span>
+                    </div>
+                    <div class="glass-card-sm" style="padding: 10px 14px; font-family: var(--font-mono); font-size: 0.84rem; display: flex; align-items: center; justify-content: space-between;">
+                      <span>🎨 <strong>ZC-A9E29191C395_style.css</strong></span>
+                      <span style="color: var(--text-muted); font-size: 0.76rem;">Glassmorphic CSS &amp; Dual Themes</span>
+                    </div>
+                    <div class="glass-card-sm" style="padding: 10px 14px; font-family: var(--font-mono); font-size: 0.84rem; display: flex; align-items: center; justify-content: space-between;">
+                      <span>⚡ <strong>ZC-A9E29191C395_script.js</strong></span>
+                      <span style="color: var(--text-muted); font-size: 0.76rem;">Calculation &amp; Memory Engine</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Footer
+       ========================================================================= -->
+  <footer class="app-footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        Bill Splitter developed for Competition by <strong>Raj Kori</strong> (SISTec Ratibad, Bhopal) · Phone: +91 6263465690
+      </div>
+      <div class="footer-id-badge">
+        Competition ID: ZC-A9E29191C395
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Receipt Slip Modal
+       ========================================================================= -->
+  <div id="receiptModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="receiptModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="receiptModalTitle" class="modal-title">Receipt Slip</h3>
+        <button type="button" id="closeModalBtn" class="btn btn-secondary btn-sm" aria-label="Close dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <pre id="receiptModalBody" class="receipt-paper"></pre>
+
+      <div style="display: flex; gap: 10px; justify-content: flex-end;">
+        <button type="button" id="modalCopyBtn" class="btn btn-secondary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          Copy Text
+        </button>
+        <button type="button" id="modalPrintBtn" class="btn btn-primary btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          Print Receipt
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite"></div>
+
+  <!-- Single Pure Vanilla Script (Zero External Libraries) -->
+  <script src="./ZC-A9E29191C395_script.js"></script>
+</body>
+</html>
